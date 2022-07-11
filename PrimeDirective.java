@@ -3,7 +3,7 @@ import java.util.ArrayList;
 class PrimeDirective {
   
   public boolean isPrime(int number) {
-    // Check if number is prime number.
+    // Checks if number is prime number.
     if (number == 2) {
       return true;
     } else if (number < 2) {
@@ -18,7 +18,7 @@ class PrimeDirective {
   }
   
   public ArrayList<Integer> onlyPrimes(int[] numbers) {
-    // Return prime numbers from array.
+    // Returns prime numbers from array.
     ArrayList<Integer> primes = new ArrayList<Integer>();
     for (int number : numbers) {
       if (isPrime(number)) {
@@ -29,7 +29,7 @@ class PrimeDirective {
   }
 
   public ArrayList<Integer> parityFilter(int[] numbers, String parity) {
-    // Return only even or odd numbers from array based on choice.
+    // Returns only even or odd numbers from array based on choice.
     ArrayList<Integer> filteredNumbers = new ArrayList<Integer>();
     if (parity == "even") {
       // Filter for even numbers
@@ -52,7 +52,7 @@ class PrimeDirective {
   }
 
   public ArrayList<Integer> limitedPrimes(int[] numbers, int n) {
-    // Return the first n prime numbers from array.
+    // Returns the first n prime numbers from array.
     ArrayList<Integer> limitedPrimes = new ArrayList<Integer>();
     for (int number : numbers) {
       if (isPrime(number)) {
@@ -66,7 +66,7 @@ class PrimeDirective {
   }
 
   public ArrayList<Integer> fibonacciNumbers(int n) {
-    // Return first n Fibonacci numbers.
+    // Returns the first n Fibonacci numbers.
     ArrayList<Integer> fibonacciNumbers = new ArrayList<Integer>();
     int numOne = 0;
     int numTwo = 1;
